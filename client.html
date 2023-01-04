@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+const main = async () => {
+  fetch("http://localhost:3000/1000");
+  await delay(250);
+  fetch("http://localhost:3000/500");
+};
+
+main();
+    </script>
+  </head>
+  <body></body>
+</html>
